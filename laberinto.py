@@ -1,19 +1,11 @@
+import muro
 laberinto = [
-    [' ', 'X', 'X', 'X', 'X'], 
-    [' ', 'X', ' ', ' ', ' '],
-    [' ', 'X', ' ', 'X', ' '], 
-    [' ', ' ', ' ', 'X', ' '], 
-    ['X', 'X', 'X', 'X', 'S']
+    [' ', ' ', ' ', ' ', ' '], 
+    [' ', ' ', ' ', ' ', ' '],
+    [' ', ' ', ' ', ' ', ' '], 
+    [' ', ' ', ' ', ' ', ' '], 
+    [' ', ' ', ' ', ' ', 'S']
 ]
-fila1 = laberinto[0]
-fila2 = laberinto[1]
-fila3 = laberinto[2]
-fila4 = laberinto[3]
-fila5 = laberinto[4]
 
-print("Laberinto:")
-print(fila1)
-print(fila2)
-print(fila3)
-print(fila4)
-print(fila5)
+ladrillos = ((0,1), (0,2), (0,3), (0,4), (1,1), (2,1), (2,3), (3,3), (4,0), (4,1), (4,2), (4,3))
+coord = muro.coordenadas(ladrillos)
