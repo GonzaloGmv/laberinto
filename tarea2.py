@@ -11,11 +11,12 @@ tarea1.tablero(laberinto)
 i = 0
 j = 0
 k = 0
-while i < 5:
-    if laberinto[j][i+1] != 'X' and i < 4:
+while i < 5 and j < 5:
+    if i < 4 and laberinto[j][i+1] != 'X':
         print("Derecha")
         i = i + 1
-    elif laberinto [j+1][i] != 'X' and j >= k:
+        k = j
+    elif j >= k and laberinto [j+1][i] != 'X':
         print("Abajo")
         j = j + 1
         k = j - 1
