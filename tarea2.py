@@ -11,6 +11,7 @@ tarea1.tablero(laberinto)
 i = 0
 j = 0
 k = 0
+
 while i < 5 and j < 5:
     if i < 4 and laberinto[j][i+1] != 'X':
         print("Derecha")
