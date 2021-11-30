@@ -8,20 +8,24 @@ laberinto = [
         [' ', ' ', ' ', ' ', 'S']
     ]
 tarea1.tablero(laberinto)
+
 i = 0
 j = 0
 k = 0
+instrucciones = list('')
 
-while i < 5 and j < 5:
+while laberinto[i][j] != 'S':
     if i < 4 and laberinto[j][i+1] != 'X':
-        print("Derecha")
+        instrucciones.append("Derecha")
         i = i + 1
         k = j
     elif j >= k and laberinto [j+1][i] != 'X':
-        print("Abajo")
+        instrucciones.append("Abajo")
         j = j + 1
         k = j - 1
     else:
-        print("Arriba")
+        instrucciones.append("Arriba")
         j = j - 1
         k = j + 1
+print("Asi es como se sale del laberinto: ")
+print(instrucciones)
